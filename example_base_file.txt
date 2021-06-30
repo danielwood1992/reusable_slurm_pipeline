@@ -1,0 +1,10 @@
+~/path/to/hideous_filename_A_1.txt	~/path/to/hideous_filename_A_2.txt	NiceNameA
+~/path/to/hideous_filename_B_1.txt	~/path/to/hideous_filename_B_2.txt	NiceNameB
+~/path/to/hideous_filename_B_1.txt	~/path/to/hideous_filename_C_2.txt	NiceNameC
+~/path/to/hideous_filename_D_1.txt	~/path/to/hideous_filename_D_2.txt	NiceNameD
+~/path/to/hideous_filename_E_1.txt	~/path/to/hideous_filename_E_2.txt	NiceNameE
+~/path/to/hideous_filename_F_1.txt	~/path/to/hideous_filename_F_2.txt	NiceNameF
+~/path/to/hideous_filename_G_1.txt	~/path/to/hideous_filename_G_2.txt	NiceNameG
+~/path/to/hideous_filename_H_1.txt	~/path/to/hideous_filename_H_2.txt	NiceNameH
+~/path/to/hideous_filename_I_1.txt	~/path/to/hideous_filename_I_2.txt	NiceNameI
+~/path/to/hideous_filename_J_1.txt	~/path/to/hideous_filename_J_2.txt	NiceNameJ
