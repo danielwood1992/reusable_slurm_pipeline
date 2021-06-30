@@ -1,0 +1,5 @@
+This is an example of a pipeline using this template, that starts with raw reads and peforms a number of steps. The following scripts are based on the template files in the main directory:
+
+IO_2_CleanReads.sh: First_Step.sh
+IO_3_MapMark.sh : Intermediate_Step.sh
+IO_4_SortMark.sh : Last_Step.sh
