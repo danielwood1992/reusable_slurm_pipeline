@@ -1,5 +1,8 @@
-This is an example of a pipeline using this template, that starts with raw reads and peforms a number of steps. The following scripts are based on the template files in the main directory:
+This is an example of part of a pipeline using this template, that starts with raw reads and peforms a number of steps (gets up to marking duplicates in the bam files). 
+The following scripts are based on the template files in the main directory:
 
-IO_2_CleanReads.sh: First_Step.sh
-IO_3_MapMark.sh : Intermediate_Step.sh
-IO_4_SortMark.sh : Last_Step.sh
+Example_S1_CleanReads.sh: First_Step.sh
+Example_S2_BWAMap.sh : Intermediate_Step.sh
+Example_S3_MarkDups.sh : Last_Step.sh
+
+See comments within each script for breakdown of what each one does.
