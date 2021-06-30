@@ -10,7 +10,7 @@ scripts due to different memory requirements and/or run times. It can be hard to
 
 Usage:
 
-Once you've set up your base_file with paths to your various files of interest, and modified the various sh scripts to make your pipeline, start by running your First_Step.sh. Once some have finished running, you can then submit your (first) Intermediate_Step.sh script. Repeat this later for your remaining Intermediate_Step.sh scripts or Final_Step.sh scripts. The progress files should keep track of which steps have finished for which, so you can re-run them without modification until all the steps have been completed for all the files. 
+Once you've set up your base_file with paths to your various files of interest, and modified the various sh scripts to make your pipeline, start by running your First_Step.sh. Once some have finished running, you can then submit your (first) Intermediate_Step.sh script. Repeat this later for your remaining Intermediate_Step.sh scripts or Final_Step.sh scripts. The progress files should keep track of which steps have finished for which, so you can re-run all of them without modification until all the steps have been completed for all the files. 
 
 
 DW To Do:
