@@ -8,10 +8,11 @@ current step are run. See files in the main repository with arbitrary commands e
 This pipeline is useful when you have a large list of files that require a number of sequential steps doing to them, each of which may require multiple SLURM submission
 scripts due to different memory requirements and/or run times. It can be hard to keep track of which files have completed which steps. 
 
-Will add examples for an NGS pipeline (which is how I ended up writing it in the first place). 
-
 Usage:
 
-Once you've set up the files, start by running your First_Step.sh. Once some have finished running, you can then submit your Intermediate_Step.sh script. Repeat this
-later for your remaining Intermediate_Step.sh or Final_Step.sh scripts. The intermediate files should keep track of which steps have finished, so you can re-run them
-without modification until all the steps have been completed for all the files. 
+Once you've set up your base_file with paths to your various files of interest, and modified the various sh scripts to make your pipeline, start by running your First_Step.sh. Once some have finished running, you can then submit your (first) Intermediate_Step.sh script. Repeat this later for your remaining Intermediate_Step.sh scripts or Final_Step.sh scripts. The progress files should keep track of which steps have finished for which, so you can re-run them without modification until all the steps have been completed for all the files. 
+
+
+DW To Do:
+Add example scripts for an NGS raw reads to vcf pipeline (which is how I ended up writing it in the first place). 
+Make this README/the example scripts a bit more comprehensible.
