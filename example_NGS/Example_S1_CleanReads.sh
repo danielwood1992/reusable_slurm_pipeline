@@ -36,6 +36,6 @@ date;
 
 parallel -N 1 -j 40 --delay 0.2 --colsep '\t' "echo $dat Started {3} >> $dir/Example_S1_Progress.txt && perl ~/bin/NGSQCToolkit_v2.3.3/QC/IlluQC.pl -se {1} 1 A -l 70 -s 20 -t 1 -z g -o $dir && perl ~/bin/NGSQCToolkit_v2.3.3/QC/IlluQC.pl -se {2} 1 A -l 70 -s 20 -t 1 -z g -o $dir && echo $dat {3} Step _1_Complete >> $dir/Example_S1_Progress.txt && 
 java -jar $TRIMMOMATIC PE $dir/{1/}_filtered.gz $dir/{2/}_filtered.gz SLIDINGWINDOW:4:15 MINLEN:70 -baseout $dir/{3}.fq.gz && $fastqc -o $dir $dir/{3}_1P.fq.gz && echo {3} Step_2_Complete >> $dir/Example_S1_Progress.txt && 
-$fastqc -o $dir $dir/{3}_2P.fq.gz && echo $dat {3} Step_3_Complete >> $dir/Example_S1_Progress.txt"  :::: $base_names; 
+$fastqc -o $dir $dir/{3}_2P.fq.gz && echo {3} $dat Step_3_Complete >> $dir/Example_S1_Progress.txt"  :::: $base_names; 
 
 
