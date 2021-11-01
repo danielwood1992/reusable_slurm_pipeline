@@ -8,7 +8,7 @@ my $name = $ARGV[3];
 
 my $basefile_nicename_pos = "0"; #Indicates which column your nice name is in your \t separated base file.
 #Remember in perl the first column is 0, the second is 1, etc. etc.
-my $prev_nicename_pos = "2";  #Indicates which column your nice name is in your " " separated progress file.
+my $prev_nicename_pos = "0";  #Indicates which column your nice name is in your " " separated progress file.
 
 open(IN, "<$prev_file");
 while(!eof(IN)){
