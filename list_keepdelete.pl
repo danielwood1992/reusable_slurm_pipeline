@@ -10,7 +10,7 @@ my $name = $ARGV[5]; #A name to give the temp file - presumably the date plus st
 
 my $prev_nicename_pos = "0";
 my $next_nicename_pos = "0";
-my $basefile_nicename_pos = "2";
+my $basefile_nicename_pos = "0";
 #See list_delete.pl for an explanation of the above.
 
 my (%keep_hash, %remove_hash);
