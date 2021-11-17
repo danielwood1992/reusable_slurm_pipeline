@@ -29,7 +29,6 @@ while(!eof(IN)){
 	$line = readline *IN;
 	chomp $line;
 	if ($line =~ m/\Q$next_string\E/){
-		print "woof\n";
 		$remove_hash{(split/ /, $line)[$next_nicename_pos]} = "whatever";
 
 	}
