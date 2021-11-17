@@ -19,9 +19,6 @@ while(!eof(IN)){
 	}
 }
 my $item;
-foreach $item (keys %hash){
-	print $item."\t";
-}	
 open(IN, "<$base_file");
 open(OUT, ">$base_file.del.$name");
 while(!eof(IN)){
