@@ -19,7 +19,7 @@ open(IN, "<$prev_file");
 while(!eof(IN)){
 	$line = readline *IN;
 	chomp $line;
-	if ($line =~ m/$prev_string/){
+	if ($line =~ m/\Q$prev_string\E/){
 		$keep_hash{(split/ /, $line)[$prev_nicename_pos]} = "whatever";
 	}
 }
@@ -28,7 +28,8 @@ open(IN, "<$next_file");
 while(!eof(IN)){
 	$line = readline *IN;
 	chomp $line;
-	if ($line =~ m/$next_string/){
+	if ($line =~ m/\Q$next_string\E/){
+		print "woof\n";
 		$remove_hash{(split/ /, $line)[$next_nicename_pos]} = "whatever";
 
 	}
@@ -43,7 +44,7 @@ while(!eof(IN)){
 	chomp $line;
 	if (exists $keep_hash{(split/\t/, $line)[$basefile_nicename_pos]}){
 		#If it exists in the Step N-1 complete files....maybe include it...
-		if (exists $remove_hash{(split/\t/, $line)[2]}){
+		if (exists $remove_hash{(split/\t/, $line)[$basefile_nicename_pos]}){
 		#...unless it exists in the Step N+1 complete file, in which case it's already done. So don't do it. 
 		}else{
 			print OUT $line."\n";
